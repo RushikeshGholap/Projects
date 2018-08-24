@@ -1,0 +1,33 @@
+<html>
+
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<h1>This is a capital maker</h1>
+</head>
+
+
+<body>
+	<input type="text" name="inpputext" id='inputbox'>
+<button id='buttonpress'>Submit</button>
+
+<div id='showtext'></div>
+
+</body>
+
+<script type="text/javascript">
+	$("#buttonpress").click(function(){
+	var text = $('#inputbox').val()
+
+    $.post("http://localhost:8000/polls/caps",
+    {
+        inputtext: text
+    },
+    function(data, status){
+        $('#showtext').html(data);
+    });
+});
+
+</script>
+
+
+</html>

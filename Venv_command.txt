@@ -1,0 +1,7 @@
+pip install virtualenv
+
+virtualenv -p python2 myenv
+
+python -m ipykernel install --user --name myenv --display-name "Name of kernel in jupyter notebook"
+
+Deactivate
