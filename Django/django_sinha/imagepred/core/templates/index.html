@@ -1,0 +1,22 @@
+<html>
+<body>
+
+<!-- <b>Hello world 2</b>
+
+
+<form action="/upload" method='post' enctype="multipart/form-data">{% csrf_token %}
+  <b>Upload Image here</b> <br>
+  Your image: <input type="file" name="image"><br>
+  <input type="submit" value="Submit">
+</form> -->
+
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Upload</button>
+  </form>
+
+
+
+</body>	
+</html>
