@@ -1,0 +1,29 @@
+<html>
+
+
+	<body>
+
+	<h1> Please enter the 2 numbers you need to add </h1>
+	<br>
+
+		<form method="post" action="/output">
+			{% csrf_token %}
+			Value of a <input type="number" name="a"><br>
+			Value of b <input type="number" name="b"><br>
+			<input type="submit" name="Submit">
+		</form>
+	{% if result %}
+	<h1> Result = {{result}} </h1>
+
+	<p> previous results = </p>
+	{% for num in numbers %}
+	<p>{{num.a}} + {{num.b}} = {{num.result}} </p>
+	{% endfor %}
+	{% endif %}
+
+	</body>
+
+
+
+
+</html>
