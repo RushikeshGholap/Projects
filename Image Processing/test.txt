@@ -1,1 +1,1 @@
-tilt.mp4
+sample_videos/walk.mp4
