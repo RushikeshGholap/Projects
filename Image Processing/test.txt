@@ -1,1 +1,1 @@
-sample_videos/tilt.mp4
+sample_videos/sample_interview_1.mp4
