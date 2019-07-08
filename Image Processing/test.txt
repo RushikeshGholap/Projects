@@ -1,1 +1,1 @@
-sample_videos/sample_interview_1.mp4
+sample_videos/walk.mp4
